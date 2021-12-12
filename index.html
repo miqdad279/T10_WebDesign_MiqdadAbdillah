@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>T10 Miqdad Abdillah</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>
+          Tugas 10 Web Desain <br />
+          Miqdad Abdillah <br />
+          D112011021 <br />
+          IF - 3B
+        </h1>
+      </header>
+    </section>
+    <div class="container">
+      <div>
+        <h2>Show/Hide</h2>
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+        <button id="toggle">Toggle</button>
+        <p class="teks1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+          possimus dolore, repellat nobis accusantium fugiat asperiores
+          perferendis. Minus praesentium ducimus minima, sit quos provident
+          autem cum nisi, quas quae odit!
+        </p>
+      </div>
+      <div>
+        <h2>Fade</h2>
+        <button id="btn_fade">Fade</button>
+        <div class="kotak1"></div>
+        <div class="kotak2"></div>
+        <div class="kotak3"></div>
+      </div>
+      <div class="slide">
+        <h2>Slide</h2>
+        <div class="click">Click Me</div>
+        <div class="panel">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            consequatur reprehenderit soluta sed at recusandae dolores alias
+            culpa reiciendis repellendus ipsum hic incidunt rerum! Magnam
+            possimus eveniet rerum nobis repudiandae!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $(".teks1").hide();
+        });
+        $("#show").click(function () {
+          $(".teks1").show();
+        });
+        $("#toggle").click(function () {
+          $(".teks1").toggle();
+        });
+        $("#btn_fade").click(function () {
+          $(".kotak1").fadeToggle();
+          $(".kotak2").fadeToggle("slow");
+          $(".kotak3").fadeToggle(900);
+        });
+        $(".click").click(function () {
+          $(".panel").slideToggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div .slide {
+  margin-top: 200px;
+}
+
+section {
+  background-color: black;
+  padding: 10px;
+  color: white;
+}
+
+header {
+  margin: 10%;
+}
+
+button {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#btn_fade {
+  float: left;
+}
+
+.kotak1 {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(114, 22, 22);
+  float: left;
+  margin-right: 20px;
+}
+
+.kotak2 {
+  height: 70px;
+  width: 70px;
+  background-color: brown;
+  float: left;
+  margin-right: 20px;
+}
+
+.kotak3 {
+  height: 70px;
+  width: 70px;
+  background-color: lightsalmon;
+  float: left;
+}
+
+.panel,
+.click {
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+  background-color: lightgray;
+  border: solid 1px gray;
+}
+
+.panel {
+  padding: 50px;
+  display: none;
+}
